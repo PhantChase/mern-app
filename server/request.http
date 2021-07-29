@@ -2,7 +2,7 @@ POST http://localhost:5000/api/auth/register
 Content-Type: application/json
 
 {
-    "username": "phantridungdz1",
+    "username": "phantchase",
     "password": "Loncace123.."
 }
 
@@ -12,7 +12,7 @@ POST http://localhost:5000/api/auth/login
 Content-Type: application/json
 
 {
-    "username": "phantridungdz",
+    "username": "phantchase",
     "password": "Loncace123.."
 }
 
@@ -20,10 +20,28 @@ Content-Type: application/json
 
 POST http://localhost:5000/api/posts
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTAyYTRmNDk5NjcxMTJjYTAzODY1NjgiLCJpYXQiOjE2Mjc1NjMyNTd9.M29E103uVmOBtRqDiYkCLOQbGSevjCg7J7B5-WKStMg
 
 {
-    "title": "my first post",
-    "description": "abc",
-    "url": "google.com",
+    "title": "my second post",
+    "description": "shopping",
+    "url": "shopee.com",
+    "status": "LEARNED"
+}
+
+###
+
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTAyYTRmNDk5NjcxMTJjYTAzODY1NjgiLCJpYXQiOjE2Mjc1NjM5NDB9.no6e06rqzgnyaiuq5FTwviDtNJQfw5CcCvgjelGUpyg
+
+###
+PUT http://localhost:5000/api/posts/6102a788c4e1a01ee0fa390a
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTAyYTRmNDk5NjcxMTJjYTAzODY1NjgiLCJpYXQiOjE2Mjc1NjM5NDB9.no6e06rqzgnyaiuq5FTwviDtNJQfw5CcCvgjelGUpyg
+
+{
+     "title": "VueWLEKJ;RLJ;KEWRA",
+    "description": "Vueee",
+    "url": "vue.org",
     "status": "LEARNING"
 }
