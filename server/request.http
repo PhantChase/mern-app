@@ -1,0 +1,29 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "phantridungdz",
+    "password": "Loncace123.."
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "phantridungdz",
+    "password": "Loncac123.."
+}
+
+###
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+
+{
+    "title": "asedas",
+    "description": "asd",
+    "url": "google.com",
+    "status": "LEARNING"
+}
