@@ -2,7 +2,7 @@ POST http://localhost:5000/api/auth/register
 Content-Type: application/json
 
 {
-    "username": "phantridungdz",
+    "username": "phantridungdz1",
     "password": "Loncace123.."
 }
 
@@ -13,7 +13,7 @@ Content-Type: application/json
 
 {
     "username": "phantridungdz",
-    "password": "Loncac123.."
+    "password": "Loncace123.."
 }
 
 ###
@@ -22,8 +22,8 @@ POST http://localhost:5000/api/posts
 Content-Type: application/json
 
 {
-    "title": "asedas",
-    "description": "asd",
+    "title": "my first post",
+    "description": "abc",
     "url": "google.com",
     "status": "LEARNING"
 }

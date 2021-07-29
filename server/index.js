@@ -26,7 +26,7 @@ const app = express()
 app.use(express.json())
 
 app.use('/api/auth', authRouter)
-app.use('/api/post', postRouter)
+app.use('/api/posts', postRouter)
 
 const PORT = 5000
 

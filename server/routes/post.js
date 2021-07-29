@@ -17,9 +17,9 @@ router.post('/', async(req, res) => {
         const newPost = new Post({
             title,
             description,
-            url: url.startsWith('https://') ? url : `https://${url}`,
+            url: url.startsWith('https://') ? url :`https://${url}`,
             status: status || 'TO LEARN',
-            user: '61022186ee79d70ed4faaeee',
+            user: '61029af0ced2a40aec105e3b'
         })
 
         await newPost.save()
