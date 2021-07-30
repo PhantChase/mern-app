@@ -46,6 +46,7 @@ router.post('/', verifyToken, async(req, res) => {
     }
 })
 
+
 // @route PUT api/posts
 // @sedc Update post
 // @access Private 
@@ -80,4 +81,22 @@ router.put('/:id', verifyToken, async(req, res) => {
     }
 })
 
+// @route DELETE api/posts
+// @sedc Delete post
+// @access Private
+router.delete('/:id', verifyToken, async(req, res) => {
+    try {
+        const postDeleteCondition = {_id: req.params.id, user: req.userId}
+        const deletedPost = await Post.findOneAndDelete(postDeleteCondition)
+        if(!deletedPost)
+        return res.status(401).json({success: false, message: 'Post not found'})
+
+        res.json({success: true, post: deletedPost})
+    } catch (error) {
+        
+        console.log(error)
+        return res.status(401).json({success: false, message: 'Post not found'})
+    }
+
+})
 module.exports = router
