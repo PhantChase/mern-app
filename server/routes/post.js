@@ -45,6 +45,7 @@ router.post('/', verifyToken, async(req, res) => {
         res.status(500).json({success: false, message: 'server error'})
     }
 })
+
 // @route PUT api/posts
 // @sedc Update post
 // @access Private 

@@ -40,7 +40,7 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTAyYTRmNDk5NjcxMTJjYTAzODY1NjgiLCJpYXQiOjE2Mjc1NjM5NDB9.no6e06rqzgnyaiuq5FTwviDtNJQfw5CcCvgjelGUpyg
 
 {
-     "title": "VueWLEKJ;RLJ;KEWRA",
+     "title": "VueA",
     "description": "Vueee",
     "url": "vue.org",
     "status": "LEARNING"
